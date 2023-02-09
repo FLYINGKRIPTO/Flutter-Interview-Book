@@ -81,3 +81,50 @@
 61. What is the difference between `GestureDetector` and `InkWell`?
 
 
+
+# Flutter Practical Questions
+
+### 1. In what sequence values will be printed in the following code snippet?
+
+```
+void main() async {
+  print(await name());
+  print(await city());
+  print(await status());
+  print(await job());
+}
+
+Future<String> name() async => "Rocky";
+Future<String> city() => Future.value("Kolar");
+Future<String> status() async {
+  Future.delayed(const Duration(seconds: 2));
+  return "Drowning";
+}
+Future<String> job() => Future.delayed(const Duration(seconds: 1), () => "Don"); 
+
+```
+
+Answwer -> 
+Rocky
+Kolar
+Drowning
+Don
+
+The function `status()` is an async fuction but await hasn't been used there and hence the 2 seconds delay doesn't mean anything.
+
+### 2. What is the difference between the following code lines? 
+
+```
+Future<String> job() => Future.delayed(const Duration(seconds: 1), () => "Don");
+Future<String> hobby() async => Future.delayed(const Duration(seconds: 1), () => "Shooting");
+
+```
+
+Answer -> 
+`async` word doesn't make any differene here.
+
+
+
+
+
+
