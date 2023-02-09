@@ -60,5 +60,6 @@
 58. What is the use of `late` keyword in flutter?
 59. How will you make your flutter app Fullscreen?
 60. What is the difference betwen `then` and `whenComplete` while accessing a future?
+61. What is the difference between `GestureDetector` and `InkWell`?
 
 
