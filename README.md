@@ -1,12 +1,30 @@
-### FLUTTER INTERVIEW BOOK
+# FLUTTER INTERVIEW BOOK
 
-1. Explain isolates and How isolates run on event loop?
-2. How isolates shares data?
-3. Compare `Isolate.spawn` and `compute`  method.
-4. What is Skia? 
-5. Why is Impeller introduced as new Flutter Engine and what is the difference between skia and impeller?
-6. What are keys in flutter and discuss there usage?
-7. What is the difference between `async` and `async*`?
+1. ### Explain isolates and How isolates run on event loop?
+2. ### How isolates shares data?
+3. ### Compare `Isolate.spawn` and `compute`  method.
+4. ### What is Skia? 
+    
+    Skia is an open-source 2D graphics library that is used to render graphics and text in a variety of environments, including Flutter.
+
+    Skia provides a complete solution for 2D graphics, including vector graphics, raster graphics, and text rendering. It supports a wide range of             platforms, including Windows, macOS, iOS, Android, and Linux, and it can be used on various hardware configurations, from low-end embedded systems to       high-performance desktop machines.
+
+   Flutter uses Skia as its primary rendering engine to draw the graphical elements on the screen. When you build a Flutter app, the Flutter framework        compiles the Dart code into native code and uses Skia to render the graphics.
+
+   Skia is designed to be fast, efficient, and scalable, and it provides a rich set of features that are useful for creating high-quality, responsive, and    visually appealing applications. Because Skia is an open-source project, developers can easily contribute to its development and make modifications to      the library if necessary.
+
+5. ### Why is Impeller introduced as new Flutter Engine and what is the difference between skia and impeller?
+6. ### What are keys in flutter and discuss there usage?
+7. ### What is the difference between `async` and `async*`?
+   
+   In Dart, the difference between async and async* lies in the type of functions they define and the way they handle asynchronous operations.
+
+   An async function is a function that is marked as asynchronous and can be used to perform asynchronous operations. It returns a Future object, which       represents a value that will be available at some point in the future. An async function can be used to perform operations such as reading from a file,     making an HTTP request, or waiting for a timer to complete.
+
+    An async* function, on the other hand, is a generator function that is marked as asynchronous. It allows you to yield values as they become available,      rather than waiting for all the results to be available before returning a single value. This is useful when working with large collections of data or      when performing operations that can produce a large number of results. An async* function returns a Stream object, which is a sequence of asynchronous      events.
+
+   In summary, the main difference between async and async* is that async functions return a single Future value, while async* functions return a Stream of    values. async functions are useful when you want to perform a single asynchronous operation and wait for the result, while async* functions are useful      when you want to perform multiple asynchronous operations and yield results as they become available.
+
 8. What is the difference between `Ticker` and `Timer`?
 9. What is `vsync` ? and where is it used?
 10. What is the difference between `Image.asset` and `AssetImage`?
