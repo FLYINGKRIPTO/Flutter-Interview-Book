@@ -81,6 +81,90 @@
 61. What is the difference between `GestureDetector` and `InkWell`?
 
 
+# Additional Questions and references
+
+- [Interview Bit Flutter](https://www.interviewbit.com/flutter-interview-questions/)
+- [More Interview Questions](https://www.raywenderlich.com/10971345-flutter-interview-questions-and-answers)
+- [Youtube Flutter interview questions](https://www.youtube.com/watch?v=pg29FkRxqqw)
+- How to implement multithreading in flutter? 
+  Answer -> Dart doesn't support multithreading, you can use isolates to replicate this.  
+- Explain [[Isolates]] and How isolates run on event loop?
+- How isolates shares data ? [[Isolates]]
+- Spawn() vs compute() [[Isolates]]
+- What are keys in flutter n uses of them ? [[Hows Keys work in flutter]]
+	- Using keys helps Flutter preserve the state of StatefulWidgets while they’re being replaced with other widgets or just moved in the widget tree.
+- Types of streams in flutter?
+- Types of tests in flutter & Explain 8)golden tests and integration tests ?
+- What are [[mixins]] in flutter?
+- Diff between [[async &async*]]?
+- Widget app vs material app
+- Explain navigatior 2.0
+- Difference between packages & plugins?
+- What is vsync? [[vsync]]
+- When to use singletickerproviderstatemixin and Tickerproviderstatemixin ? [[Ticker, Timer, AnimationController]]
+- How [[AOT and JIT]] works?
+- Use of [[late keyword]]?
+- Explain the build modes in flutter?
+- Diff between Navigator.pushNamed and Navigator.pushReplacementNamed?
+- What are keys in Flutter?
+	- [Flutter keys](https://www.raywenderlich.com/22416843-unlocking-your-flutter-widgets-with-keys)
+	- [Flutter keys GeeksForGeeks](https://www.geeksforgeeks.org/flutter-concept-of-key-in-widgets/#:~:text=Well%2C%20Keys%20are%20the%20ones,state%20when%20modifying%20a%20collection.)
+- How does the navigator work in flutter?
+- Explain the lifecycle of the Flutter application? [Flutter App lifecycle](https://levelup.gitconnected.com/app-lifecycle-in-flutter-e4ba686d16fe)
+- What is Builder in flutter?
+	- `Builder` is a widget that allows you to define a build function within the context of another widget. It is commonly used when you need to access a `BuildContext` that is deeper in the widget tree hierarchy or when you want to encapsulate widget creation logic within a separate function.
+- What are abstract, const, final keywords in Flutter?
+- Different between SizedBox and Container.
+- What is Named, factory, and default constructors? [[Constructors]]
+- What are the types of streams and explain their difference
+- Why Apk ,Ipk in flutter so big ? This is because, flutter ships a core engine, framework, ICU data, LICENSE file etc with its build output which are mandatory for a flutter app to run.
+- Diff between expanded vs flexible -> Expanded widget class extends the Flexible Widget with FlexFit.tight [Expanded Vs Flexible](https://medium.com/@apmntechdev/flutter-expanded-and-flex-cfd4e9f1e069) [[Expanded Widget]]
+- Explain row n column & how mainaxisalignment works ? [MainAxisAlignment Vs CrossAxisAlignment](https://flutteragency.com/what-is-diffrence-between-crossaxisalignment-and-mainaxisalignment/)
+- How to make responsive UI in Flutter?
+- Tests in Flutter
+- Difference b/w Image.Network and NetworkImage -> [Image.network vs NetworkImage](https://stackoverflow.com/questions/52242995/difference-in-networkimage-and-image-network#:~:text=They%20are%20different.,an%20image%20on%20the%20screen.)
+- [[const and final keyword differences]]
+- What is the difference between [[MediaQuery.of(context).size and  MediaQuery.sizeOf(context)]]
+- SemanticDebugging ``showSemanticsDebugger`` -> The `showSemanticsDebugger` property can be useful for debugging accessibility issues in your app. For example, if you are having trouble with a screen reader not being able to interact with a particular widget in your app, you can enable the Semantics Debugger to see how Flutter is representing the widget to the screen reader.
+- [[Flutter Widget rendering]]-> Widget tree, Element Tree, Render Tree etc
+- [[Hows Keys work in flutter]]
+- [[How will you navigate without context in flutter]]
+- [[SOLID principles]]
+- [[const and final keyword differences]]
+- [[Flutter Devtools]]
+- How to know if a widget is rebuilding again and again
+- [[Performance optimization in Flutter]]
+- Why is apk size big and how to reduce it.
+- How does deeplinking work in Flutter.
+- Data Structures array and string questions
+- [[Hows Keys work in flutter]]
+- [[Ticker, Timer, AnimationController]]
+- Difference b/w [[Change Notifier]] and [[Inherited Widget]]
+- Where to inject BlocProvider
+- [[MicroTasks and Event Loops]]
+- - App Lifecycle - inactive and pause me difference [[WidgetsBindingObserver - App Lifecycle]]
+- Gravity Friction etc - Physics animation
+- Types of animation controllers???
+- [[StatefulWidget Lifecycle]] - Deactivate()
+- [[Sealed classes, Records and  Pattern matching]]
+- Communicate between isolates??
+- [[markNeedsBuild]] -> Function called in RenderObject
+- [[WidgetsBindingObserver - App Lifecycle]]
+- [[Inherited Widget]]
+
+- When is didChangeDependency Called?
+	- **didChangeDependencies()** is called when a dependency of the State object changes or immediately after **initState()**
+	- **didChangeDependencies** may be called multiple times per widget lifecycle ,it was called when the keyboard appears/disappears
+	- `initstate` is called before the state loads its dependencies.
+- When is didUpdateWidget called?
+- vsync
+	- Vsync basically keeps the track of screen, so that Flutter does not renders the animation when the screen is not being displayed.
+- Ticker, SingleTickerProviderMixin, TickerProviderMixin
+- Difference between Image.asset and AssetImage
+	- `Image` is a `StatefulWidget` and `Image.asset` is just a named constructor, you can use it directly on your widget tree.
+	- `AssetImage` is an `ImageProvider` which is responsible for obtaining the image of the specified path.
+	- If you check the source code of the `Image.asset` you will find that it's using AssetImage to get the image.
+
 
 # Flutter Practical Questions
 
