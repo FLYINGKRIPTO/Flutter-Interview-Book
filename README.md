@@ -27,7 +27,7 @@
 
 8. ### What is the difference between `Ticker` and `Timer`?
 9. ### What is `vsync` ? and where is it used?
-10.###  What is the difference between `Image.asset` and `AssetImage`?
+10. ###  What is the difference between `Image.asset` and `AssetImage`?
 11. ### Expalin `TickerProvierStateMixin` and `SingleTickerProviderStateMixin`?
 12. ### What is the difference between `Navigator.pushNamed` and `Navigator.pushReplacementNamed`?
 13. ### What are `abstract`, `const`, `final` keywords in Flutter?
